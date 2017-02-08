@@ -12,7 +12,7 @@
 
 	function routeProviderConfig($routeProvider) {
 		$routeProvider.when('/fallback', {
-			templateUrl: '/fallback/fallback.html',
+			templateUrl: '/routes/fallback/fallback.html',
 			controller: FallbackController,
 			controllerAs: 'fallback'
 		});
