@@ -2,7 +2,7 @@
 // jshint esnext: true
 'use strict';
 
-const PROJECT_NAME = 'project-name';
+const PROJECT_NAME = 'project';
 
 module.exports = {
 
