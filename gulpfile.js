@@ -7,7 +7,7 @@ const gulp = require('gulp');
 const connect = require('gulp-connect');
 
 require('./gulp-tasks/clean')(config);
-require('./gulp-tasks/process-resources')(config);
+require('./gulp-tasks/process-assets')(config);
 require('./gulp-tasks/process-templates')(config);
 require('./gulp-tasks/process-stylesheets')(config);
 require('./gulp-tasks/process-stylesheets-vendor')(config);
@@ -27,7 +27,7 @@ gulp.task('build', [ 'clean' ], function () {
 		'process-javascript-vendor',
 		'process-stylesheets-vendor',
 		'process-templates',
-		'process-resources'
+		'process-assets'
 	]);
 });
 
@@ -39,7 +39,7 @@ gulp.task('serve', function () {
 });
 
 gulp.task('watch', [
-	'watch-resources',
+	'watch-assets',
 	'watch-templates',
 	'watch-stylesheets',
 	'watch-javascript'

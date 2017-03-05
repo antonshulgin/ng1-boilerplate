@@ -17,7 +17,7 @@ module.exports = {
 		js: [
 			'src/**/*.js'
 		],
-		resources: [
+		assets: [
 			'src/**/*.png',
 			'src/**/*.svg'
 		]
